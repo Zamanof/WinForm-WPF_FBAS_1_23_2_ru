@@ -76,4 +76,12 @@ public partial class Form1 : Form
             Text = textBox.Text;
         }
     }
+
+    private void Form1_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.KeyCode == Keys.Enter)
+        {
+            MessageBox.Show(changeTextBox.Text);
+        }
+    }
 }

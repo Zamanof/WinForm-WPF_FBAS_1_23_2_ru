@@ -103,6 +103,7 @@ partial class Form1
         changeTextBox.Size = new Size(100, 23);
         changeTextBox.TabIndex = 5;
         changeTextBox.TextChanged += changeTextBox_TextChanged;
+        changeTextBox.KeyDown += Form1_KeyDown;
         // 
         // Changelabel
         // 
@@ -147,6 +148,7 @@ partial class Form1
         Controls.Add(changeColorButton);
         Name = "Form1";
         Text = "My first program ";
+        KeyDown += Form1_KeyDown;
         MouseLeave += Form1_MouseLeave;
         MouseMove += Form1_MouseMove;
         ResumeLayout(false);
