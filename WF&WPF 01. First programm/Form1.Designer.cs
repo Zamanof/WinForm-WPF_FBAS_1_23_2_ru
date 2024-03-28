@@ -38,6 +38,8 @@ partial class Form1
         Changelabel = new Label();
         MouseXLabel = new Label();
         MouseYLabel = new Label();
+        DialogResultLabel = new Label();
+        dialogButton = new Button();
         SuspendLayout();
         // 
         // changeColorButton
@@ -131,11 +133,32 @@ partial class Form1
         MouseYLabel.TabIndex = 7;
         MouseYLabel.Text = "Y: 0";
         // 
+        // DialogResultLabel
+        // 
+        DialogResultLabel.AutoSize = true;
+        DialogResultLabel.Location = new Point(315, 306);
+        DialogResultLabel.Name = "DialogResultLabel";
+        DialogResultLabel.Size = new Size(38, 15);
+        DialogResultLabel.TabIndex = 8;
+        DialogResultLabel.Text = "label1";
+        // 
+        // dialogButton
+        // 
+        dialogButton.Location = new Point(298, 342);
+        dialogButton.Name = "dialogButton";
+        dialogButton.Size = new Size(75, 23);
+        dialogButton.TabIndex = 9;
+        dialogButton.Text = "Click";
+        dialogButton.UseVisualStyleBackColor = true;
+        dialogButton.Click += dialogButton_Click;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(677, 418);
+        Controls.Add(dialogButton);
+        Controls.Add(DialogResultLabel);
         Controls.Add(MouseYLabel);
         Controls.Add(MouseXLabel);
         Controls.Add(Changelabel);
@@ -167,4 +190,6 @@ partial class Form1
     private Label Changelabel;
     private Label MouseXLabel;
     private Label MouseYLabel;
+    private Label DialogResultLabel;
+    private Button dialogButton;
 }

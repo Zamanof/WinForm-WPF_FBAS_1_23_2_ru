@@ -84,4 +84,11 @@ public partial class Form1 : Form
             MessageBox.Show(changeTextBox.Text);
         }
     }
+
+    private void dialogButton_Click(object sender, EventArgs e)
+    {
+        var result = MessageBox.Show("Some Text", "", MessageBoxButtons.AbortRetryIgnore);
+        DialogResultLabel.Text = result.ToString();
+        
+    }
 }
