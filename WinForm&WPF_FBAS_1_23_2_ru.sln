@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WF&WPF 01. First programm",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF&WPF 01", "WF&WPF 01", "{28302D61-48C8-4295-8E6B-08300FB8DF1F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF&WPF 02", "WF&WPF 02", "{267E77CF-DD5E-4CB7-99F6-7D7BBC6BF6CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF&WPF 01. CheckBox & RadioButton", "WF&WPF 01. CheckBox & RadioButton\WF&WPF 01. CheckBox & RadioButton.csproj", "{307737CB-7B8C-4799-B45D-7E46A568184A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF&WPF 02. RichTextBox, MaskedTextBox, ComboBox", "WF&WPF 02. RichTextBox, MaskedTextBox, ComboBox\WF&WPF 02. RichTextBox, MaskedTextBox, ComboBox.csproj", "{E5D74B50-A6B8-417E-BBA0-054416421D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +23,22 @@ Global
 		{C3945C93-AB57-4BB9-9A23-FCBD8F5A4219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3945C93-AB57-4BB9-9A23-FCBD8F5A4219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3945C93-AB57-4BB9-9A23-FCBD8F5A4219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307737CB-7B8C-4799-B45D-7E46A568184A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307737CB-7B8C-4799-B45D-7E46A568184A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307737CB-7B8C-4799-B45D-7E46A568184A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307737CB-7B8C-4799-B45D-7E46A568184A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D74B50-A6B8-417E-BBA0-054416421D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D74B50-A6B8-417E-BBA0-054416421D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D74B50-A6B8-417E-BBA0-054416421D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D74B50-A6B8-417E-BBA0-054416421D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C3945C93-AB57-4BB9-9A23-FCBD8F5A4219} = {28302D61-48C8-4295-8E6B-08300FB8DF1F}
+		{307737CB-7B8C-4799-B45D-7E46A568184A} = {267E77CF-DD5E-4CB7-99F6-7D7BBC6BF6CC}
+		{E5D74B50-A6B8-417E-BBA0-054416421D18} = {267E77CF-DD5E-4CB7-99F6-7D7BBC6BF6CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {155B87F9-6BA8-453E-B558-6020FA54B46C}
