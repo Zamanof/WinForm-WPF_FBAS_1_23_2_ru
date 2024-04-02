@@ -213,7 +213,6 @@
             Controls.Add(redButton);
             Controls.Add(richTextBox1);
             Controls.Add(maskedTextBox1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
