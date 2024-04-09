@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF&WPF 06. Panels - DockPan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF&WPF 06. Panels - Canvas", "WF&WPF 06. Panels - Canvas\WF&WPF 06. Panels - Canvas.csproj", "{888C47ED-B4CE-4138-9E57-7562D8525598}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF&WPF 06. Markup Login Page", "WF&WPF 06. Markup Login Page\WF&WPF 06. Markup Login Page.csproj", "{A4D2333C-39F4-435B-BEA5-FF0244C4FF93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{888C47ED-B4CE-4138-9E57-7562D8525598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{888C47ED-B4CE-4138-9E57-7562D8525598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{888C47ED-B4CE-4138-9E57-7562D8525598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D2333C-39F4-435B-BEA5-FF0244C4FF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D2333C-39F4-435B-BEA5-FF0244C4FF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D2333C-39F4-435B-BEA5-FF0244C4FF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D2333C-39F4-435B-BEA5-FF0244C4FF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +207,7 @@ Global
 		{F429F20C-34B4-4754-960A-387B5D1EC75D} = {7BB6BE2D-79AF-4234-BF7B-36C98B756CB8}
 		{655EBC1C-2F8F-4C95-AA55-C1C7D7383DE2} = {7BB6BE2D-79AF-4234-BF7B-36C98B756CB8}
 		{888C47ED-B4CE-4138-9E57-7562D8525598} = {7BB6BE2D-79AF-4234-BF7B-36C98B756CB8}
+		{A4D2333C-39F4-435B-BEA5-FF0244C4FF93} = {7BB6BE2D-79AF-4234-BF7B-36C98B756CB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {155B87F9-6BA8-453E-B558-6020FA54B46C}
