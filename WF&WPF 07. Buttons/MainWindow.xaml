@@ -1,0 +1,79 @@
+﻿<Window x:Class="WF_WPF_07._Buttons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_07._Buttons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800 "
+        MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!-- Button-->
+        <Button
+                Height="50" Width="150" 
+                Background="CadetBlue"  
+                Foreground="#fff"
+                FontFamily="Arial" FontWeight="Black"
+                FontStyle="Normal" Click="Button_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Find" VerticalAlignment="Center" Margin="5"/>
+                <Image  Stretch="Fill" Source="/research.png" Width="25" Height="30"/>
+            </StackPanel>
+        </Button>
+        
+        <!--Repeat button-->
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">
+            <TextBlock x:Name="countTextBlock" Text="0" HorizontalAlignment="Center" FontSize="25"/>
+            <RepeatButton  Width="150" Height="50" Click="RepeatButton_Click"
+            Delay="1000"   Interval="1000" ClickMode="Hover">
+                Click me
+            </RepeatButton>
+        </StackPanel>
+        
+        <!--Check box-->
+        <UniformGrid Rows="3" Columns="3" Grid.Row="0" Grid.Column="2">
+            <CheckBox Content="1" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="2" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="3" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="4" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="5" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="6" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="7" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="8" FontSize="15" Checked="CheckBox_Checked"/>
+            <CheckBox Content="9" FontSize="15" Checked="CheckBox_Checked"/>
+        </UniformGrid>
+        <UniformGrid Rows="3" Columns="3" Grid.Row="1" Grid.Column="0">
+            <RadioButton Content="1" FontSize="15" GroupName="First"/>
+            <RadioButton Content="2" FontSize="15" GroupName="First"/>
+            <RadioButton Content="3" FontSize="15" GroupName="First"/>
+            <RadioButton Content="4" FontSize="15" GroupName="Second"/>
+            <RadioButton Content="5" FontSize="15" GroupName="Second"/>
+            <RadioButton Content="6" FontSize="15" GroupName="Second"/>
+            <RadioButton Content="7" FontSize="15" GroupName="Third"/>
+            <RadioButton Content="8" FontSize="15" GroupName="Third"/>
+            <RadioButton Content="9" FontSize="15" GroupName="Third"/>     
+        </UniformGrid>
+        <UniformGrid Rows="3" Columns="3" Grid.Row="1" Grid.Column="1">
+            <RadioButton Content="1" FontSize="15"/>
+            <RadioButton Content="2" FontSize="15"/>
+            <RadioButton Content="3" FontSize="15"/>
+            <RadioButton Content="4" FontSize="15"/>
+            <RadioButton Content="5" FontSize="15"/>
+            <RadioButton Content="6" FontSize="15"/>
+            <RadioButton Content="7" FontSize="15"/>
+            <RadioButton Content="8" FontSize="15"/>
+            <RadioButton Content="9" FontSize="15"/>
+        </UniformGrid>
+    </Grid>
+
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="WF_WPF_07._Grouping.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_07._Grouping"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Column="0" Header="Test 1" Margin="30">
+            <StackPanel>
+                <TextBlock Text="How many?"/>
+                <RadioButton Content="A)"/>
+                <RadioButton Content="B)"/>
+                <RadioButton Content="C)"/>
+                <RadioButton Content="D)"/>
+            </StackPanel>
+        </GroupBox>
+        <Expander Grid.Column="1" Header="Test 2" IsExpanded="True"
+                  Margin="30">
+            <StackPanel>
+                <TextBlock Text="What is?"/>
+                <RadioButton Content="A)"/>
+                <RadioButton Content="B)"/>
+                <RadioButton Content="C)"/>
+                <RadioButton Content="D)"/>
+            </StackPanel>
+        </Expander>
+    </Grid>
+</Window>

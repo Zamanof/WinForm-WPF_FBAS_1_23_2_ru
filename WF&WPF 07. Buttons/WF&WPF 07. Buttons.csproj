@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WF_WPF_07._Buttons</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="item_12012_1695634680_237.jpg" />
+    <None Remove="research.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="item_12012_1695634680_237.jpg" />
+    <Resource Include="research.png" />
+  </ItemGroup>
+
+</Project>
