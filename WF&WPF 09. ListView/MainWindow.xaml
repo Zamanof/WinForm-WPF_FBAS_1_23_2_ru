@@ -1,0 +1,29 @@
+﻿<Window x:Class="WF_WPF_09._ListView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_09._ListView"
+        xmlns:columns="clr-namespace:System.Collections;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="200">
+    <Grid>
+        <ListView Name="carList" ItemsSource="{DynamicResource ResourceKey=cars}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Model" DisplayMemberBinding="{Binding Path=Model}"/>
+                    <GridViewColumn Header="Marka" DisplayMemberBinding="{Binding Path=Marka}"/>
+                    <GridViewColumn Header="Year" DisplayMemberBinding="{Binding Path=Year}"/>
+                </GridView>
+            </ListView.View>
+            <ListView.Resources>
+                <columns:ArrayList x:Key="cars">
+                    <local:Car Model="Toyota" Marka="Prius" Year="2015"/>
+                    <local:Car Model="Toyota" Marka="Carolla" Year="2022"/>
+                    <local:Car Model="Nissan" Marka="Pajero" Year="1999"/>
+                    <local:Car Model="Mercedes" Marka="C class" Year="2000"/>                   
+                </columns:ArrayList>                
+            </ListView.Resources>
+        </ListView>
+    </Grid>
+</Window>
