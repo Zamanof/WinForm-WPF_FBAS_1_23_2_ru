@@ -1,0 +1,34 @@
+﻿<Window x:Class="WF_WPF_08._ListBox___class.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_08._ListBox___class"
+        mc:Ignorable="d"
+        FontSize="20"
+        Title="MainWindow" Height="450" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20px"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="CarList" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                 Margin="10" 
+                 DisplayMemberPath="Model">
+            <!--<local:Car Marka="Salam" Model="Aleykum" Year="1952"/>
+            <local:Car Marka="Toyota" Model="Prius" Year="1952"/>-->
+
+        </ListBox>
+        <TextBox x:Name="carTextBox" Grid.Row="2" Grid.Column="0" Margin="10 0"/>
+        <Button Grid.Row="2" Grid.Column="2" 
+                Content="Add" Margin="10 0"
+                Click="Button_Click"/>
+    </Grid>
+</Window>

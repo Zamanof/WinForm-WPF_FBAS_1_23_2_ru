@@ -1,0 +1,42 @@
+﻿<Window x:Class="WF_WPF_08._ListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:WF_WPF_08._ListBox"
+        mc:Ignorable="d"
+        FontSize="25"
+        Title="MainWindow" Height="450" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20px"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="CarsList" Grid.Row="0" Grid.Column="0"
+                 SelectionMode="Multiple"
+                 KeyDown="CarsList_KeyDown"
+                 Margin="10" >
+            <TextBlock Text="Toyota"/>
+            <TextBlock Text="Renault"/>
+            <TextBlock Text="Vaz"/>
+            <TextBlock Text="Volvo"/>
+        </ListBox>
+        <ListBox x:Name="StudentList" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" 
+                 Margin="10" SelectionChanged="StudentList_SelectionChanged" >
+            <sys:String>Camal</sys:String>
+            <sys:String>Rasul</sys:String>
+            <sys:String>Alina</sys:String>
+        </ListBox>
+        <TextBox x:Name="carTextBox" Grid.Row="2" Grid.Column="0" Margin="10 0"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="Add" Margin="10 0" Click="Button_Click"/>
+
+    </Grid>
+</Window>
