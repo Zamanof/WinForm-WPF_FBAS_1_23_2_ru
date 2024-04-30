@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogbookLibrary;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WF_WPF_12._Logbook__MVP_WPF_.Models.Entities;
-using WF_WPF_12._Logbook__MVP_WPF_.Presenters.Interfaces;
+
 
 namespace WF_WPF_12._Logbook__MVP_WPF_
 {

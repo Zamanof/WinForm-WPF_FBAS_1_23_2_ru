@@ -1,9 +1,6 @@
-﻿using WF_WPF_12._Logbook__MVP_WPF_.Models.Interfaces;
-using WF_WPF_12._Logbook__MVP_WPF_.Presenters.Interfaces;
+﻿namespace LogbookLibrary;
 
-namespace WF_WPF_12._Logbook__MVP_WPF_.Presenters;
-
-internal class SchedulePresnter
+public class SchedulePresnter
 {
     const int TeacherId = 1;
     private IScheduleModel _model;

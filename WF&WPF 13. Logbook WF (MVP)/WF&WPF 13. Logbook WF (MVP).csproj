@@ -3,9 +3,10 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>WF_WPF_12._Logbook__MVP_WPF_</RootNamespace>
+    <RootNamespace>WF_WPF_13._Logbook_WF__MVP_</RootNamespace>
     <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>

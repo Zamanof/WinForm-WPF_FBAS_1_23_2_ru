@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using WF_WPF_12._Logbook__MVP_WPF_.Models.Interfaces;
-
-namespace WF_WPF_12._Logbook__MVP_WPF_.Models.Entities;
+namespace LogbookLibrary;
 
 public class FakeScheduleModel: IScheduleModel
 {

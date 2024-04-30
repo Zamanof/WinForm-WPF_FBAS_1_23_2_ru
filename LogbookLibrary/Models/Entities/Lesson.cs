@@ -1,4 +1,4 @@
-﻿namespace WF_WPF_12._Logbook__MVP_WPF_.Models.Entities;
+﻿namespace LogbookLibrary;
 
 public class Lesson
 {
