@@ -70,18 +70,16 @@
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Mobile Phone"/>
-                <TextBlock Text="0505518013"/>
-            </StackPanel>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="5"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-            </Grid>
-            <ComboBox Grid.Column="0" Padding="5, 0"/>
-            <TextBox Grid.Column="2"/>
-
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox Grid.Column="0" Padding="5,0"/>
+                    <TextBox Grid.Column="2"/>
+                </Grid>            
+            </StackPanel>          
             <StackPanel Margin="0, 5, 0, 0">
                 <TextBlock Text="Personal Email"/>
                 <TextBlock Text="Zamanov@itstep.org"/>
