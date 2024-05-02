@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen">
     <Grid Margin="5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
             <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="5"/>
