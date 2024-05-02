@@ -1,12 +1,10 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WF_WPF._MVVM_Example.Models
+namespace WF_WPF._MVVM_Example.Models;
+
+internal interface IPhoneCodeManager
 {
-    internal interface IPhoneCodeManager
-    {
-    }
+    IEnumerable<string> PhoneCodes { get; }
+    string GetAreaByPhoneCode(string phoneCode);
 }

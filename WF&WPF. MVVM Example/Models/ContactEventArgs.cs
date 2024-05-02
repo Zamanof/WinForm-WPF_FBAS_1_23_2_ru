@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WF_WPF._MVVM_Example.Models
+namespace WF_WPF._MVVM_Example.Models;
+
+internal sealed class ContactEventArgs: EventArgs
 {
-    internal class ContactEventArgs
+    private readonly Contact _contact;
+    public Contact Contact => _contact;
+
+    public ContactEventArgs(Contact contact)
     {
+        _contact = contact;
     }
 }

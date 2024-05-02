@@ -12,7 +12,8 @@ internal sealed class Contact
     private readonly string? firstName;
     public string FirstName => firstName;
 
-    private readonly Guid guid;
+    private readonly Guid id;
+    public Guid Id => id;
 
     private readonly string lastName;
     public string LastName => lastName;
@@ -81,6 +82,6 @@ internal sealed class Contact
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.guid = guid;
+        this.id = guid;
     }
 }

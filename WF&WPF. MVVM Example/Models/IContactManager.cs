@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WF_WPF._MVVM_Example.Models
+namespace WF_WPF._MVVM_Example.Models;
+
+internal interface IContactManager
 {
-    internal interface IContactManager
-    {
-    }
+    IEnumerable<Contact> Contacts { get; }
+
+    event EventHandler<ContactEventArgs> ContactAdded;
+    event EventHandler<ContactEventArgs> ContactDeleted;
+
+    void AddContact(Contact contact);
+    void DeleteContact(Contact contact);
+    void UpdateContact(Contact contact);
+
 }
