@@ -1,0 +1,100 @@
+﻿<Window x:Class="WF_WPF._MVVM_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF._MVVM_Example"
+        mc:Ignorable="d"
+        Title="Contacts" Height="350" Width="900"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
+        <ListBox Grid.Column="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="Name"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition SharedSizeGroup="Email"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition SharedSizeGroup="Phone"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name" Grid.Column="0"/>
+                        <TextBlock Text="Email" Grid.Column="2"/>
+                        <TextBlock Text="Phone" Grid.Column="4"/>
+                        <Button Content="Edit" Grid.Column="6"/>
+                        <Button Content="Delete" Grid.Column="8"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="2" Margin="5,0,0,0">
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="Name" FontSize="10"/>
+                <TextBlock Text="Nadir" FontSize="10"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="Mobile Phone" FontSize="10"/>
+                <TextBlock Text="0505518013" FontSize="10"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="Email" FontSize="10"/>
+                <TextBlock Text="zamanov@itstep.org" FontSize="10"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="From" FontSize="10"/>
+                <TextBlock Text="Step IT" FontSize="10"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="4" Orientation="Vertical">
+            <StackPanel>
+                <TextBlock Text="FirstName"/>
+                <TextBlock Text="Nadir"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="LastName"/>
+                <TextBlock Text="Zamanov"/>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <TextBlock Text="Mobile Phone"/>
+                <TextBlock Text="0505518013"/>
+            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <ComboBox Grid.Column="0" Padding="5, 0"/>
+            <TextBox Grid.Column="2"/>
+
+            <StackPanel Margin="0, 5, 0, 0">
+                <TextBlock Text="Personal Email"/>
+                <TextBlock Text="Zamanov@itstep.org"/>
+            </StackPanel>
+            <Grid Margin="0, 5, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Save" Grid.Column="0"/>
+                <Button Content="Cancel" Grid.Column="2"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
