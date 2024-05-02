@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Areas>
+    <Area Name="Azerbaijan">
+        <PhoneCode Value="994"/>
+    </Area>
+    <Area Name="Geaorgia">
+        <PhoneCode Value="995"/>
+    </Area>
+    <Area Name="Rusiia">
+        <PhoneCode Value="7"/>
+    </Area>
+    <Area Name="Ukraine">
+        <PhoneCode Value="380"/>
+    </Area>
+    <Area Name="USA">
+        <PhoneCode Value="1"/>
+    </Area>
+	<Area Name="Turkey">
+		<PhoneCode Value="90"/>
+	</Area>
+</Areas>
+
