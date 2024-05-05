@@ -62,11 +62,11 @@
         <StackPanel Grid.Column="4" Orientation="Vertical">
             <StackPanel>
                 <TextBlock Text="FirstName"/>
-                <TextBlock Text="Nadir"/>
+                <TextBox/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="LastName"/>
-                <TextBlock Text="Zamanov"/>
+                <TextBox />
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Mobile Phone"/>
@@ -82,7 +82,7 @@
             </StackPanel>          
             <StackPanel Margin="0, 5, 0, 0">
                 <TextBlock Text="Personal Email"/>
-                <TextBlock Text="Zamanov@itstep.org"/>
+                <TextBox/>
             </StackPanel>
             <Grid Margin="0, 5, 0, 0">
                 <Grid.ColumnDefinitions>
