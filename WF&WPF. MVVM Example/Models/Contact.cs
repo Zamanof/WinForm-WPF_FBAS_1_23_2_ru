@@ -33,7 +33,7 @@ internal sealed class Contact
     }
     private void OnEmailChanged(EventArgs e)
     {
-       EmailChanged.Invoke(this, e);
+       EmailChanged?.Invoke(this, e);
     }
 
     private string phone = string.Empty;
@@ -52,7 +52,7 @@ internal sealed class Contact
 
     private void OnPhoneChanged(EventArgs e)
     {
-        PhoneChanged.Invoke(this, e);
+        PhoneChanged?.Invoke(this, e);
     }
 
     private string phoneCode = string.Empty;
@@ -71,7 +71,7 @@ internal sealed class Contact
 
     private void OnPhoneCodeChanged(EventArgs e)
     {
-        PhoneCodeChanged.Invoke(this, e);
+        PhoneCodeChanged?.Invoke(this, e);
     }
 
     public Contact(string? firstName, string lastName)

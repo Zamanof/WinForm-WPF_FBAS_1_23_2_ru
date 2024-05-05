@@ -2,7 +2,7 @@
 
 internal class PhoneCodesFile
 {
-    public const string Path = @"..\..\PhoneCodes.xml";
+    public const string Path = @"..\..\..\PhoneCodes.xml";
     public static class Root
     {
         public const string ElementName = "Areas";

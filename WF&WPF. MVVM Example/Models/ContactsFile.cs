@@ -8,7 +8,7 @@ namespace WF_WPF._MVVM_Example.Models
 {
     internal static class ContactsFile
     {
-        public const string Path = @"..\..\Contacts.xml";
+        public const string Path = @"..\..\..\Contacts.xml";
         public static class Root
         {
             public const string ElementName = "Contacts";
