@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Interactivity ="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="900">
+        Title="Contacts" Height="450" Width="900">
     <Interactivity:Interaction.Triggers>
         <Interactivity:EventTrigger EventName="Loaded">
             <Interactivity:InvokeCommandAction Command="{Binding LoadedCommand}"/>
