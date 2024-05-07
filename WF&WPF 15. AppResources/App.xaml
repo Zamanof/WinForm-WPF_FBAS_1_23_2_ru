@@ -1,0 +1,9 @@
+﻿<Application x:Class="WF_WPF_15._AppResources.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WF_WPF_15._AppResources"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="myBgColor" Color="Turquoise"/>
+    </Application.Resources>
+</Application>

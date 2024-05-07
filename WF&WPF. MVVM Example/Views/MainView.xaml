@@ -39,8 +39,8 @@
                         <TextBlock Text="{Binding Name}" Grid.Column="0"/>
                         <TextBlock Text="{Binding Email}" Grid.Column="2"/>
                         <TextBlock Text="{Binding Phone}" Grid.Column="4"/>
-                        <Button Content="Edit" Grid.Column="6"/>
-                        <Button Content="Delete" Grid.Column="8"/>
+                        <Button Content="Edit" Grid.Column="6" Command="{Binding EditCommand}"/>
+                        <Button Content="Delete" Grid.Column="8" Command="{Binding DeleteCommand}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -48,29 +48,29 @@
         <StackPanel Grid.Column="2" Margin="5,0,0,0">
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Name" FontSize="10"/>
-                <TextBlock Text="Nadir" FontSize="10"/>
+                <TextBlock Text="{Binding SelectedContact.Name}" FontSize="10" FontWeight="SemiBold"/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Mobile Phone" FontSize="10"/>
-                <TextBlock Text="0505518013" FontSize="10"/>
+                <TextBlock Text="{Binding SelectedContact.Phone}" FontSize="10"/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Email" FontSize="10"/>
-                <TextBlock Text="zamanov@itstep.org" FontSize="10"/>
+                <TextBlock Text="{Binding SelectedContact.Email}" FontSize="10"/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="From" FontSize="10"/>
-                <TextBlock Text="Step IT" FontSize="10"/>
+                <TextBlock Text="{Binding SelectedContact.Area}" FontSize="10"/>
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Column="4" Orientation="Vertical">
             <StackPanel>
                 <TextBlock Text="FirstName"/>
-                <TextBox/>
+                <TextBox IsEnabled="{Binding CanEditFirstName}" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="LastName"/>
-                <TextBox />
+                <TextBox IsEnabled="{Binding CanEditLastName}" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <TextBlock Text="Mobile Phone"/>
@@ -80,13 +80,13 @@
                         <ColumnDefinition Width="5"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <ComboBox Grid.Column="0" Padding="5,0"/>
-                    <TextBox Grid.Column="2"/>
+                    <ComboBox Grid.Column="0" Padding="5,0" ItemsSource="{Binding PhoneCodes}" SelectedItem="{Binding PhoneCode}"/>
+                    <TextBox Grid.Column="2" Grid.Row="0" Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" />
                 </Grid>
             </StackPanel>
             <StackPanel Margin="0, 5, 0, 0">
                 <TextBlock Text="Personal Email"/>
-                <TextBox/>
+                <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
             <Grid Margin="0, 5, 0, 0">
                 <Grid.ColumnDefinitions>
@@ -94,8 +94,8 @@
                     <ColumnDefinition Width="5"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Content="Save" Grid.Column="0"/>
-                <Button Content="Cancel" Grid.Column="2"/>
+                <Button Content="Save" Grid.Column="0" Command="{Binding SaveCommand}"/>
+                <Button Content="Cancel" Grid.Column="2" Command="{Binding CancelCommand}"/>
             </Grid>
         </StackPanel>
     </Grid>

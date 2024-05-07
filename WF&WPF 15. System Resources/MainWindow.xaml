@@ -1,0 +1,23 @@
+﻿<Window x:Class="WF_WPF_15._System_Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid Rows="2" Background="Aqua">
+        <Button
+            Foreground="{x:Static SystemColors.WindowTextBrush}"
+            Margin="50"
+            FontSize="45"
+            Content="Salam"
+            />
+        <Button
+            Foreground="{DynamicResource {x:Static SystemColors.WindowColor}}"
+            Margin="50"
+            FontSize="45"
+            Content="Salam"
+            />
+
+    </UniformGrid>
+</Window>

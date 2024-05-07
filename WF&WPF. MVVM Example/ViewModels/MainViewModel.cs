@@ -11,6 +11,7 @@ internal sealed class MainViewModel : ViewModel<MainViewModel>
     private readonly ICommand cancelCommand;
     public ICommand CancelCommand => cancelCommand;
 
+
     private readonly IContactManager contactManager;
 
     private readonly ICollection<ContactViewModel> contacts
@@ -19,6 +20,7 @@ internal sealed class MainViewModel : ViewModel<MainViewModel>
 
     private readonly ICommand loadedCommand;
     public ICommand LoadedCommand => loadedCommand;
+
 
     private readonly IPhoneCodeManager phoneCodeManager;
 
@@ -139,7 +141,7 @@ internal sealed class MainViewModel : ViewModel<MainViewModel>
 
     private void Save()
     {
-       Contact contact = EditContact ?? new Contact(FirstName, LastName);
+        Contact contact = EditContact ?? new Contact(FirstName, LastName);
         contact.Email = Email;
         contact.Phone = Phone;
         contact.PhoneCode = PhoneCode;
@@ -176,6 +178,8 @@ internal sealed class MainViewModel : ViewModel<MainViewModel>
         }
     }
 
+
+    [DependsUpon(nameof(EditContact))]
     private void LoadSelectedContact()
     {
         Email = EditContact.Email;
@@ -210,6 +214,7 @@ internal sealed class MainViewModel : ViewModel<MainViewModel>
 
     private void ViewModel_EditRequested(object? sender, ContactEventArgs e)
     {
+        
         EditContact = e.Contact;
     }
 
