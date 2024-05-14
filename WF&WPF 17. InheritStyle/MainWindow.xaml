@@ -1,0 +1,28 @@
+﻿<Window x:Class="WF_WPF_17._InheritStyle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_17._InheritStyle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="allButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Control.FontSize" Value="40"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.Margin" Value="10"/>
+        </Style>
+        <Style x:Key="uniqueButtonStyle" BasedOn="{StaticResource allButtonStyle}">
+            <Setter Property="Control.Background" Value="BlueViolet"/>
+            <Setter Property="Control.Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <UniformGrid Columns="2" Rows="2">
+        <Button Content="Button 1" Style="{StaticResource allButtonStyle}"/>
+        <Button Content="Button 2" Style="{StaticResource uniqueButtonStyle}"/>
+        <Button Content="Button 3" Style="{StaticResource uniqueButtonStyle}"/>
+        <Button Content="Button 4" Style="{StaticResource allButtonStyle}"/>
+
+    </UniformGrid>
+</Window>

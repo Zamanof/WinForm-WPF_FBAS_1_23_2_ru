@@ -1,0 +1,39 @@
+﻿<Window x:Class="WF_WPF_17._Styles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_17._Styles" 
+        xmlns:sys="clr-namespace:System;assembly=netstandard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Window.Resources>
+        <FontFamily x:Key="BtnFontFamily">Comic Sans MS</FontFamily>
+        <FontWeight x:Key="BtnFontWeight">Bold</FontWeight>
+        <sys:Double x:Key="FontSize">25</sys:Double>
+
+        <Style x:Key="bgStyle">
+            <Setter Property="Control.Background" Value="Beige"/>
+        </Style>
+
+        <Style x:Key="btnStyle">
+            <Setter Property="Button.FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Button.FontSize" Value="20"/>
+            <Setter Property="Button.FontWeight" Value="Bold"/>
+            <Setter Property="Button.Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel Style="{StaticResource bgStyle}">
+        <Button Content="Use Windows Resources" Margin="10"
+                FontFamily="{StaticResource BtnFontFamily}"
+                FontWeight="{StaticResource BtnFontWeight}"
+                FontSize="{StaticResource FontSize}"/>
+        
+        <Button Content="Use Style" Style="{StaticResource btnStyle}"/>
+       
+        <Button Content="Use Control Style" Style="{StaticResource bgStyle}" Margin="10"/>
+
+        <Button Content="Use Style" Style="{StaticResource btnStyle}"/>
+
+    </StackPanel>
+</Window>

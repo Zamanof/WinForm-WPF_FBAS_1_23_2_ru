@@ -1,0 +1,27 @@
+﻿<Window x:Class="WF_WPF_17._EventSetter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_17._EventSetter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="250 ">
+    <Window.Resources>
+        <Style x:Key="textBlockStyle">
+            <Setter Property="Control.FontSize" Value="30"/>
+            <EventSetter Event="FrameworkElement.MouseEnter" Handler="MouseEnterHandler"/>
+            <EventSetter Event="FrameworkElement.MouseLeave" Handler="MouseLeaveHandler"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock Text="Hower me" Style="{StaticResource textBlockStyle}"/>
+        <TextBlock Text="Dont Hower me" FontSize="20"/>
+        <TextBlock Text="Hower me" Style="{StaticResource textBlockStyle}"/>
+        <TextBlock 
+            Text="Without Style" 
+            FontSize="20" 
+            MouseEnter="MouseEnterHandler"
+            MouseLeave="MouseLeaveHandler"/>
+
+    </StackPanel>
+</Window>

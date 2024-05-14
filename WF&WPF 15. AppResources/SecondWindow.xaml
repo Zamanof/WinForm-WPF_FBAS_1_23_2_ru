@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WF_WPF_15._AppResources"
         mc:Ignorable="d"
+        Background="{StaticResource myBgColor}"
         Title="SecondWindow" Height="450" Width="800">
     <Grid>
         

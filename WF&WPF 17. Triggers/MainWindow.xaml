@@ -1,0 +1,43 @@
+﻿<Window x:Class="WF_WPF_17._Triggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WF_WPF_17._Triggers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400 ">
+    <Window.Resources>
+        <Style x:Key="btnStyle">
+            <Style.Setters>
+                <Setter Property="Control.FontFamily" Value="Consolas"/>
+                <Setter Property="Control.FontSize" Value="25"/>
+                <Setter Property="Control.FontWeight" Value="Light"/>
+                <Setter Property="Control.Margin" Value="10"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="Control.IsFocused" Value="True">
+                    <Setter Property="Control.Background" Value="Yellow"/>
+                </Trigger>
+
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.Foreground" Value="Green"/>
+                    <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+                </Trigger>
+
+                <Trigger Property="Button.IsPressed" Value="True">
+                    <Setter Property="ItemsControl.Foreground" Value="Red"/>                    
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Property triggers-->
+        <!-- Data triggers-->
+        <!-- Event triggers-->
+        <!-- Multitriggers-->
+        <Button Width="200" Height="100" Content="Button" Style="{StaticResource btnStyle}"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WF_WPF_17._Chat</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\bg.jpg" />
+    <None Remove="img\borchali.jpg" />
+    <None Remove="img\button.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\bg.jpg" />
+    <Resource Include="img\borchali.jpg" />
+    <Resource Include="img\button.png" />
+  </ItemGroup>
+
+</Project>
