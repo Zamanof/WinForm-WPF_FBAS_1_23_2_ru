@@ -1,0 +1,56 @@
+﻿<Window x:Class="WF_WPF_18._MVVM_BookList.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:ClassModifier="internal"
+        Loaded="Window_Loaded"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Library"  Width="250"
+        SizeToContent="Height">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="5"/>
+                <RowDefinition/>
+                <RowDefinition Height="5"/>
+                <RowDefinition/>
+                <RowDefinition Height="5"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Name"/>
+            <TextBox x:Name="name" Grid.Column="2" Grid.Row="0" TextChanged="Name_TextChanged"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="Author"/>
+            <TextBox x:Name="author" Grid.Column="2" Grid.Row="2" TextChanged="Author_TextChanged"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="4" Text="Publish date"/>
+            <DatePicker x:Name="publishDate" Grid.Row="4" Grid.Column="4" SelectedDateChanged="PublishDate_SelectedDataChanged"/>
+
+            <Button x:Name="add" Content="Add Book" 
+                    Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3"
+                    Click="AddBook_Click"/>
+        </Grid>
+        <Button Content="Show List Book" Grid.Column="0" 
+                Grid.Row="2" Grid.ColumnSpan="3"
+                Click="BookList_Click"/>
+        <Button Content="Show Single Book" Grid.Column="0" 
+                Grid.Row="4" Grid.ColumnSpan="3"
+                Click="SingleBook_Click"/>
+    </Grid>
+</Window>

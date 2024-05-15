@@ -1,0 +1,42 @@
+﻿<Window x:Class="WF_WPF_18._MVVM_BookList.Views.SingleBookView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:ClassModifier="internal"
+        mc:Ignorable="d"
+        Title="SingleBookView" SizeToContent="Height" Width="450">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Name:" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock Text="{Binding CurrentBook.Name}" Grid.Column="2" Grid.Row="0" FontWeight="Bold"/>
+        
+        <TextBlock Text="Author:" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Text="{Binding CurrentBook.Author}" Grid.Column="2" Grid.Row="2" FontWeight="Bold"/>
+        
+        <TextBlock Text="Publish Date:" Grid.Column="0" Grid.Row="4"/>
+        <TextBlock Text="{Binding CurrentBook.PublishDate}" Grid.Column="2" Grid.Row="4" FontWeight="Bold"/>
+        <Grid Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Previous" Grid.Column="0" Command="{Binding PreviousCommand}"/>
+            <Button Content="Next" Grid.Column="2" Command="{Binding NextCommand}"/>
+        </Grid>
+    </Grid>
+</Window>
